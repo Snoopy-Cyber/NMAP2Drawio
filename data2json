@@ -1,0 +1,117 @@
+{
+    "networksList": [
+        {
+            "networkName": "10.0.0.0/24",
+            "isRootNetwork": false
+        },
+        {
+            "networkName": "192.168.1.0/24",
+            "isRootNetwork": false
+        },
+        {
+            "networkName": "0.0.0.0/0",
+            "isRootNetwork": true
+        }
+    ],
+    "hostsList": [
+        {
+            "hostName": "OPNsense.localdomain",
+            "routesTraffic": true,
+            "networkAdapters": [
+                {
+                    "adapterName": "192.168.1.1",
+                    "adapterIP": "192.168.1.1"
+                },                
+                {
+                    "adapterName": "10.0.0.1",
+                    "adapterIP": "10.0.0.1"
+                },
+                {
+                    "adapterName": "90.0.0.1",
+                    "adapterIP": "90.0.0.1"
+                }
+            ],
+            "networkServices": [
+            {
+                "layer4protocol": "tcp",
+                "portNumber": "445",
+                "layer7protocol": "",
+                "processName": ""
+            },
+            {
+                "layer4protocol": "tcp",
+                "portNumber": "135",
+                "layer7protocol": "",
+                "processName": ""
+            },
+            {
+                "layer4protocol": "tcp",
+                "portNumber": "139",
+                "layer7protocol": "",
+                "processName": ""
+            }]
+        },
+        {
+            "hostName": "192.168.1.100",
+            "routesTraffic": false,
+            "networkAdapters": [
+                {
+                    "adapterName": "192.168.1.100",
+                    "adapterIP": "192.168.1.100"
+                }
+            ],
+            "networkServices": []
+        },
+        {
+            "hostName": "10.0.0.2",
+            "routesTraffic": false,
+            "networkAdapters": [
+                {
+                    "adapterName": "10.0.0.2",
+                    "adapterIP": "10.0.0.2"
+                }
+            ],
+            "networkServices": [
+                {
+                    "layer4protocol": "tcp",
+                    "portNumber": "22",
+                    "layer7protocol": "",
+                    "processName": ""
+                }
+            ]
+        },
+        {
+            "hostName": "192.168.1.101",
+            "routesTraffic": false,
+            "networkAdapters": [
+                {
+                    "adapterName": "192.168.1.101",
+                    "adapterIP": "192.168.1.101"
+                }
+            ],
+            "networkServices": []
+        },
+        {
+            "hostName": "10.0.0.4",
+            "routesTraffic": false,
+            "networkAdapters": [
+                {
+                    "adapterName": "10.0.0.4",
+                    "adapterIP": "10.0.0.4"
+                }
+            ],
+            "networkServices": []
+        },
+        {
+            "hostName": "90.0.0.2",
+            "routesTraffic": false,
+            "networkAdapters": [
+                {
+                    "adapterName": "90.0.0.2",
+                    "adapterIP": "90.0.0.2"
+                }
+            ],
+            "networkServices": []
+        }
+    ]
+}
